@@ -33,7 +33,8 @@ public class TerminalOperation {
                 people.stream()
                         .filter( p -> p.getAge() > 20)
                         //.sorted(Comparator.comparing(Person::getAge))
-                        .min( (p1,p2) -> Integer.compare(p1.getAge(),p2.getAge()));
+                        //.min( (p1,p2) -> Integer.compare(p1.getAge(),p2.getAge()));
+                        .min(Comparator.comparing(Person::getAge));
 
         assertEquals(27,minPerson.get().getAge());
         assertEquals("Jimmy",minPerson.get().getFirstName());
