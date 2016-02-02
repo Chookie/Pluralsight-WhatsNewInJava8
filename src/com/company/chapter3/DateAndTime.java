@@ -87,7 +87,7 @@ public class DateAndTime {
 
         ZonedDateTime nextMeetingNy = nextMeetingLondon.withZoneSameInstant(ZoneId.of("America/New_York"));
         System.out.println("Next Meeting New York = " +
-                DateTimeFormatter.ISO_INSTANT.format((nextMeetingNy))
+                DateTimeFormatter.ISO_DATE_TIME.format((nextMeetingNy))
         );
         // Next Meeting New York = 2016-02-16T09:00:00Z
     }

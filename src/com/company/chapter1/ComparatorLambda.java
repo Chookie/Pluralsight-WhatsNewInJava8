@@ -44,7 +44,7 @@ public class ComparatorLambda {
     }
 
     private static void lambdaComparator3(){
-        Comparator<String> comparator = (String s1, String s2) -> Integer.compare(s1.length(),s2.length());
+        //Comparator<String> comparator = (String s1, String s2) -> Integer.compare(s1.length(),s2.length());
 
         List<String> strings = Arrays.asList("****","**","***","*");
         Collections.sort(strings, (s1, s2) -> Integer.compare(s1.length(),s2.length()));
